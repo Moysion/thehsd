@@ -4,11 +4,15 @@
 <style>
   .header{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    right: 0%;
     font-family: 'Audiowide';font-size: 36px;
-
+    color: white;
+    background-color: rgb(29, 29, 29);
+    padding-left: 34.5%;
+    padding-right: 34.5%;
+    text-align: center;
+    
   }
 
   .container {
@@ -75,6 +79,21 @@
     color: rgb(102, 102, 102);
     text-align: center;
   }
+  .column {
+  float: left;
+  width: 32.3%;
+  padding: 9px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Audiowide';font-size: 31px;
+  color: white;
+}
+  
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 
 <body>
@@ -83,12 +102,24 @@
   </a>
   <button class="faq-button">Guides</button>
   <button class="contact-button">Discord</button>
-  <div class="container">
-    <img src="backround.png" alt="Sample Background" style="width: 100%;">
-    <div class="header">
-      The HSD Guides (wip)
+  <div class="header">
+      The HSD Guides
+  </div>
+  <div class="row-one">
+    <div class="column">
+      <img src="backround.png" alt="Guide 1" style="width: 100%;">
+      Guide One
+    </div>
+    <div class="column">
+      <img src="backround.png" alt="Guide 1" style="width: 100%;">
+      Guide Two
+    </div>
+    <div class="column">
+      <img src="backround.png" alt="Guide 1" style="width: 100%;">
+      Guide Three
     </div>
   </div>
-  <footer class="copyright">© 2025 Moysion. All rights reserved.</footer>
+ 
+  
 </body>
 </head>
